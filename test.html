@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .grid-container{
+            display:grid;
+            border:1px solid black;
+            height:100%;
+            width:100%;
+            grid-template-columns:auto auto auto;
+            grid-template-rows: 300px 300px 300px;
+            row-gap:5px ;
+            column-gap:5px ;
+            grid-template-areas: "d d d" "a b b" "a c c" "e e e"
+        }
+        .grid-item{
+            border:1px solid green;
+        }
+        #one{
+            /* background-color: aqua; */
+            /* grid-row-start:2 ; */
+            /* grid-row-end:span 1 ; */
+            grid-area: a;            
+        }
+
+        #three{
+            /* background-color: aquamarine;
+            grid-column-start:2;
+            grid-row-end: span 2; */
+            grid-area: b;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        #two{
+            grid-area:c;
+        }
+        #four{
+            grid-area: d;
+            text-align: center;
+        }
+        #five{
+            grid-area: e;
+        }
+    </style>
+</head>
+<body>
+    <div class="grid-container">
+        <div class="grid-item" id="two">2</div>
+        <div class="grid-item" id="three">
+            <form>
+                <label>Username</label>
+                <input type="text">
+                <br>
+                <label>Password</label>
+                <input type="password"><br>
+                <input type="submit" value="log in">
+            </form>
+        </div>
+        <div class="grid-item" id="four">Lovely professional university</div>
+        <div class="grid-item" id="five">5</div>
+        
+        
+
+    </div>
+
+</body>
+</html>

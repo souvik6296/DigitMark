@@ -1,0 +1,117 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+body{
+    height: 100%;
+    background-color: rgb(221, 49, 78);
+}
+.form{
+    
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+.container{
+    height: 500px;
+    width: 500px;
+    background-color: whitesmoke;
+    border-radius: 15px;
+    margin-top: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    
+}
+
+#logo a{
+    font-family: 'Playfair Display', serif;
+    font-size: 55px ;
+    text-align: center;
+    color: black;
+}
+.input-container{
+    width: 450px;
+    height: 50px;
+    border: 1px solid green;
+    border-radius: 15px;
+    margin: 25px 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+}
+.inputs{
+    width: 90%;
+    height: 100%;
+    padding: 5px 15px;
+    font-size: 16px;
+    outline: none;
+    border: none;
+}
+.go{
+    font-size: 20px;
+    font-weight: bold;
+    color: white;
+    background-color: yellow;
+    padding: 5px 15px;
+    border: 2px solid black;
+    border-radius: 15px;
+    margin: 15px 0px;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: black;
+    cursor: pointer;
+}
+#others{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+#others a{
+    font-size: 14px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: black;
+    padding: 0px 5px;
+}
+#others a:hover{
+    border-bottom: 2px solid black;
+}
+#container2{
+    visibility: hidden;
+}
+#container0{
+    visibility: hidden;
+}
+#holder{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#avtar-picker{
+    border-radius: 50%;
+    border: 2px solid blueviolet;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#alert-msg{
+    width: 100%;
+    height: 25px;
+    /* background-color: rgb(14, 220, 14); */
+    background-color: #f11206;
+    position: fixed;
+    top: 0px;
+    z-index: 3;
+    display: flex;
+    align-items: center;
+    padding: 0px 15px;
+    visibility: hidden;
+}
+
